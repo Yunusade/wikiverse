@@ -113,7 +113,6 @@ export const App = () => {
           <p>Tags: {singlePage.tags.map((tag) => tag.name).join(", ")}</p>
           <p>Date: {new Date(singlePage.createdAt).toLocaleDateString()}</p>
           <button onClick={handleClick}>Back to wiki list</button>
-					{/* add delete button */}
 					<button onClick={() => handleDelete(singlePage.slug)}>Delete</button>
         </div>
       )}
