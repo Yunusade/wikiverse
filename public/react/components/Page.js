@@ -1,9 +1,9 @@
-import React from 'react';
+import React from "react";
 
-export const Page = (props) => {
-
-  return <>
-    <h3>{props.page.title}</h3>
-  </>
-} 
-	
+export const Page = ({page, fetchSinglePage}) => {
+  return (
+    <>
+      <h3 className="link" onClick={() =>fetchSinglePage(page.slug)}>{page.title}</h3>
+    </>
+  );
+};
